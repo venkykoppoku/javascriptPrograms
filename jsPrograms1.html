@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>es6</title>
+	<script>
+		var squared = x => x*x;
+		console.log(squared(10))
+
+	
+ if(true)
+ {
+ 	const a = 12;
+ 	console.log(a)
+
+ }
+
+
+
+
+
+
+const perfect = function(n){ 
+	let s =0;
+	for(let i =1 ;i<n;i++)
+	 if(n %i ==0) s+=i;
+	if(s ==n) console.log("perfect") 
+		else console.log("not")}
+			perfect(128)
+
+
+		
+function bubsort(arr) {
+	var n = arr.length
+	for(i = n;i>=0;i--){
+		for(j=0;j<i;j++){
+			if(arr[j]> arr[j+1]){
+			var temp = arr[j]
+			arr[j] = arr[j+1]
+			arr[j+1] = temp
+		}
+	}
+}
+return arr
+
+}
+console.log(bubsort([1,5,3]))
+
+
+let bub = a =>a.sort((a,b) =>  a-b)
+console.log(bub([1,5,3]))
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
