@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript objects</title>
+
+	<script>
+	var empty_obj = {}
+	var stooge = { first_name : "venky","middle-name":"koppoku"}
+console.log(stooge["middle-name"]); //for reserved words or illegal names otherwise we use .(dot) operator
+
+var flight = {
+	airline: "Ocean",
+	number : 456,
+	departure : {
+		IATA : "syd",
+		time : "2017-07-30 2:45",
+		city : "Sydney"
+	},
+	arrival : {
+		IATA : "Lax",
+		time : "2017-08-01 3:45",
+		city : "JFK"
+	}
+
+}
+
+//retrival of data from object
+		console.log(flight.arrival)
+
+
+		var status = flight.status || "abc"
+
+		console.log(flight.status)
+
+// update data of the object
+
+stooge["koppoku"] = "last-name"
+console.log(stooge)
+
+
+	</script>
+	
+	
+</head>
+<body>
+
+</body>
+</html>
