@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<script>
+
+// function for reverse of given string	
+		var reverse = function(str)  {
+			var rev = "";
+			var n = str.length;
+			for (i = n-1;i >= 0;i--)
+				rev += str.charAt(i)
+			return rev;
+			}
+
+	console.log(reverse("satyam"))
+
+
+	// function for reverse of given array
+var reverseArray = function(arr)  {
+			var rev = [];
+			var n = arr.length;
+			for (i = n-1;i >= 0;i--)
+			rev.push(arr[i])	
+			return rev;
+			}
+console.log(reverseArray([1,2,3]))
+
+//function for getting the elements in given range
+
+var range = function(from,to){
+	var res = []
+	for(i = from;i< to; i++){
+		res.push(i)
+	}
+	return res
+
+}
+console.log(range(1,10))
+
+// function for concatenation of two given strings
+
+var concat = function(){
+	
+}
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

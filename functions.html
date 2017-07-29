@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>functions</title>
+	<script>
+		var add = function /*add*/(a,b) {  
+			return a + b
+		}
+		console.log(add(1,2))
+
+
+		var myObject = {
+			value :0,
+			increment: function (inc){
+				this.value += typeof inc === 'number' ?inc:1  //methode invocation pattern
+			}
+		}
+
+		myObject.increment()
+		console.log(myObject.value)
+
+myObject.double = function(){
+	var that = this;
+	var helper = function(){
+		that.value = add(that.value,that.value)
+	};
+	helper()
+};
+myObject.double()
+console.log(myObject.value)  //function invocation pattern
+
+var s = function ( ) {
+var i, sum = 0;
+for (i = 0; i < arguments.length; i += 1) {
+sum += arguments[i];
+}
+return sum;
+}
+console.log(s(1,2,3,4,5))
+
+
+var q = function (sta){
+	return {
+		getStatus:function(){
+			return sta;
+		}
+	}
+}
+
+var q1 = sta => () => console.log(sta)
+q1("fail")
+
+var a = q("success")
+console.log(a.getStatus())
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
